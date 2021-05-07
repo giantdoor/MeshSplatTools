@@ -168,7 +168,7 @@ namespace MeshSplatMapTool
 			Event e = Event.current;
 
 			// check keypress
-			if (Event.current.type == EventType.keyDown)
+			if (Event.current.type == EventType.KeyDown)
 			{
 				// escape stops painting mode
 				if (Event.current.keyCode == (KeyCode.Escape))
@@ -181,7 +181,7 @@ namespace MeshSplatMapTool
 			}
 
 			// this stops objects getting selected
-			if (Event.current.type == EventType.layout)  HandleUtility.AddDefaultControl(GUIUtility.GetControlID(GetHashCode(), FocusType.Passive));
+			if (Event.current.type == EventType.Layout)  HandleUtility.AddDefaultControl(GUIUtility.GetControlID(GetHashCode(), FocusType.Passive));
 
 			//Event e = Event.current;
 			//int ID = GUIUtility.GetControlID(hash, FocusType.Passive);
